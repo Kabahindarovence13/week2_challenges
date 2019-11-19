@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+<head>
+   <title> challenge2.html </title>
+   <script type="text/javascript">
+   function CalculateAge()
+   {
+    let Birth_year = prompt("Please enter year of birth");
+    let d = new Date();
+    let n = d.getFullYear();
+    let age =n -Birth_year;
+      
+    if (age < 18)
+     {
+     User = "You are a Minor";
+     }
+    else if ( age >=18 && age <= 36)
+    {
+     User = "You are a Youth";   
+    } 
+    else if(age > 36) 
+    {
+     User = " You are an Elder";
+    }
+     alert (User);
+    
+   }
+</script>
+</head>
+<body style = "background-color:blueviolet" onload = "CalculateAge();">
+      <h2 style="text-align:center;color:black"> Takes in Birth_year and calculates ages and puts you in a category </h2>
+      </body>
+
+</html>
