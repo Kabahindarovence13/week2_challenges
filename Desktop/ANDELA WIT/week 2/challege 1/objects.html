@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+<head>
+<title> Square.html </title>
+<p id="obj"></p>
+<script>
+ var myobj,p,i,x=" ";
+  myobj = {
+      "p":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+       };
+      
+  for ( i in myobj.p){
+   
+ x +="<br><div>" + myobj.p[i] + "=" + myobj.p[i] * myobj.p[i] + "</br></div>";   
+  }
+  
+document.getElementById('obj').innerHTML = x;
+</script>
+ 
+</head>
+ 
+<body style = "background-color:lightseagreen">
+
+</body>
+</html>
